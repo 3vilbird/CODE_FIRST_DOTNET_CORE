@@ -21,9 +21,13 @@ spin up conttainer to run
 
 docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=yourStrong(!)Password" -e "MSSQL_PID=Express" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
 
-
-
 generate migration
-https://learn.microsoft.com/en-us/ef/core/cli/dotnet  --. install migration
+https://learn.microsoft.com/en-us/ef/core/cli/dotnet --. install migration
 
 dotnet ef migrations add InitialCreate
+dotnet ef database update --> update the data base
+
+https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/applying?tabs=dotnet-core-cli
+
+script generation
+dotnet ef migrations script
