@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SmapleCodeFirst.Context;
+using SmapleCodeFirst.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 // add db context
 builder.Services.AddDbContext<EmpContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("DBstr")));
-
+builder.Services.AddTransient<IEmployee, Employee>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
