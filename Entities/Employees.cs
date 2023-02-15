@@ -1,7 +1,9 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SmapleCodeFirst.Entities
 {
+    [Table("Employees", Schema = "EP")]
     public class Employees
     {
         [Key]
