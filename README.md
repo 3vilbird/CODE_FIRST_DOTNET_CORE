@@ -31,3 +31,12 @@ https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/applying?t
 
 script generation
 dotnet ef migrations script
+
+
+
+schema creation and managing
+
+![](https://github.com/3vilbird/CODE_FIRST_DOTNET_CORE/blob/master/Screenshot%20from%202023-02-15%2018-36-37.png)
+
+
+
